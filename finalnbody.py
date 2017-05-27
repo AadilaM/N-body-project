@@ -74,7 +74,7 @@ class NbodySolver:
         totalrho=np.fft.ifft(rho_ft*pot_ft).real
         return totalrho
         
-    def get_force(self): #written by Salma
+    def get_force(self): #written by Salma- gets the force on each grid point
         self.fx=self.rho.copy()
         self.fy=0*self.fx  
         potential=self.total_potential()
